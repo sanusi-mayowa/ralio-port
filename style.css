@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shalimar&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  background: url("images/background.png");
+  background-size: cover;
+  background-color: #100f1f;
+}
+@font-face {
+  font-family: "Monument Extended";
+  src: url("MonumentExtended-Regular.otf") format("opentype");
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  padding-left: 80px;
+  padding-right: 145px;
+  position: fixed !important;
+  z-index: 999;
+  background: url("images/background.png");
+  background-size: cover;
+  background-color: #100f1f;
+}
+.logo img {
+  width: 50px;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.nav ul li a {
+  color: #fff;
+  font-family: "Lato", serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-transform: uppercase;
+}
+.navbar-toggler:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.btn-close {
+  background: url("images/close.png");
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+.btn-close:focus {
+  box-shadow: none !important;
+}
+.navbar-toggler-icon {
+  background-image: url("images/hamburger.png");
+}
+.offcanvas-body,
+.offcanvas {
+  background-color: #100f1f;
+}
+.hero-section {
+  max-width: 1136px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.avatar {
+  text-align: center;
+  position: relative;
+  max-width: 512px;
+  margin: 0 auto;
+}
+.avatar img {
+  width: 100%;
+}
+.btn-1 {
+  position: absolute;
+  top: 50%;
+  left: -85px;
+}
+.btn-2 {
+  position: absolute;
+  top: 20%;
+  right: -85px;
+}
+.btn-1 button,
+.btn-2 button {
+  background-color: #6d6bce;
+  border: none;
+  padding: 15px 40px;
+  font-size: 15.96px;
+  line-height: 20.35px;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  font-family: "Monument Extended", sans-serif;
+  letter-spacing: 2px;
+}
+.btn-2 button {
+  background-color: #3f9c95;
+}
+.btn-1 button::after,
+.btn-2 button::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #6d6bce;
+  left: 8px;
+  top: 8px;
+  width: 100%;
+  height: 100%;
+}
+.btn-2 button::after {
+  border: 1px solid #3f9c95;
+}
+.name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.name img {
+  width: 70px;
+}
+.name h2 {
+  font-family: "Monument Extended", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+}
+.hero-content p {
+  font-family: "Lato", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25.8px;
+  text-align: center;
+  color: #fff;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.hire-button {
+  text-align: center;
+  margin-top: 15px;
+}
+.hire-button button {
+  background-color: #ce866b;
+  padding: 10px 60px;
+  border: none;
+  font-size: 17px;
+  font-family: "Monument Extended", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  cursor: pointer;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+.slider-wrapper {
+  background-color: rgba(34, 32, 65, 1);
+  height: 199px;
+  overflow: hidden;
+  position: relative;
+  top: 60px;
+  margin-bottom: 60px;
+}
+.slider-inner {
+  display: flex;
+  width: 200%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.slider-inner-1 {
+  animation-name: slide-left;
+  animation-duration: 15s;
+}
+.slider-inner-2 {
+  animation-name: slide-right;
+  animation-duration: 15s;
+}
+.slider-content {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+}
+.slider-inner h1 {
+  font-family: "Monument Extended", sans-serif;
+  font-size: 51px;
+  font-weight: 400;
+  line-height: 70.09px;
+  color: #fff;
+  margin: 0;
+  padding: 10px 0;
+}
+.slider-content .h1-2 {
+  margin-left: -650px;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+.about-section,
+.projects {
+  margin-top: 150px;
+  display: flex;
+  color: #fff;
+  gap: 25px;
+}
+.about-title,
+.project-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Monument Extended", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  transform: rotate(-180deg);
+  writing-mode: vertical-lr;
+  margin-top: -9px;
+  position: relative;
+  top: 70px !important;
+  height: 100px !important;
+}
+.about-title {
+  top: 45px !important;
+}
+.about-line,
+.project-line {
+  width: 5px;
+  height: 80%;
+  background-color: #ce866b;
+  margin-top: -20px;
+  margin-top: 8px;
+}
+.description p {
+  font-family: "Lato", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25.8px;
+  text-align: justify;
+}
+.row .img-fluid {
+  height: 400px;
+  object-fit: cover;
+  width: 100% !important;
+}
+.row h2 {
+  margin-top: 10px;
+  font-family: "Monument Extended", sans-serif;
+  font-weight: 400;
+}
+.row p {
+  font-family: "Lato", serif;
+}
+.row span {
+  color: #30d1a1;
+  font-family: "Lato", serif;
+  display: inline-block;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+.row .special {
+  color: #ce866b !important;
+  font-family: "Lato", serif;
+  margin-left: 15px;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+.see-more {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.see-more a {
+  position: relative;
+  display: inline-block;
+}
+.see-more a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  background: #fff;
+  left: 0;
+}
+.see-more a {
+  color: #fff;
+}
+form {
+  width: 100%;
+}
+.email-input {
+  display: flex;
+  gap: 50px;
+  background: #f4f4fa;
+  width: 100%;
+  align-items: center;
+  padding-left: 20px;
+  height: 50px;
+}
+form input {
+  width: 100%;
+  border: none;
+  height: 100% !important;
+  padding: 0;
+  background: transparent;
+  padding-bottom: 2px;
+  font-family: "Monument Extended", sans-serif;
+}
+form input:focus {
+  border: none;
+  outline: none;
+}
+form label {
+  font-family: "Monument Extended", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+}
+form input::placeholder {
+  font-family: "Monument Extended", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: gray;
+}
+.name-input,
+.purpose-input {
+  margin-top: 15px;
+}
+.purpose-wrapper {
+  background: #f4f4fa;
+  position: relative;
+  height: 120px;
+}
+.purpose-input {
+  gap: 28px;
+}
+.submit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px 25px;
+  width: 186px;
+  height: 51px;
+  border: none;
+  color: #fff;
+  background: rgba(206, 134, 107, 1);
+  font-family: "Monument Extended", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+.download-cv {
+  margin-top: 15px;
+}
+.download-cv a {
+  width: 300px;
+  height: 49px;
+  background: rgba(244, 244, 250, 1);
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 10px;
+  font-weight: 400;
+  font-family: "Monument Extended", sans-serif;
+  font-size: 15px;
+  color: rgba(16, 15, 31, 1);
+}
+.download-cv a span img {
+  width: 30px;
+}
+.bottom-slider {
+  margin-top: 30px;
+}
+.thank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-section {
+  position: relative;
+  top: 30px;
+}
+.thank-btn {
+  border: none;
+  background: rgba(206, 134, 107, 1);
+  width: 378px;
+  height: 87px;
+  font-family: "Monument Extended", sans-serif;
+  font-size: 41.77px;
+  font-weight: 400;
+  line-height: 50.13px;
+  color: rgba(255, 255, 255, 1);
+}
+.btn-footer {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+.btn-3 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.btn-4 {
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+.btn-3 button,
+.btn-4 button {
+  background-color: rgba(155, 78, 207, 1);
+  border: none;
+  padding: 15px 40px;
+  font-size: 15.96px;
+  line-height: 20.35px;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  font-family: "Monument Extended", sans-serif;
+  letter-spacing: 2px;
+}
+.btn-4 button {
+  background: rgba(63, 156, 149, 1);
+}
+.btn-3 button::after,
+.btn-4 button::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(155, 78, 207, 1);
+  left: 8px;
+  top: 8px;
+  width: 100%;
+  height: 100%;
+}
+.btn-4 button::after {
+  border: 1px solid rgba(63, 156, 149, 1);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  z-index: 999;
+}
+footer h2 {
+  font-family: "Monument Extended", sans-serif;
+  color: rgba(255, 255, 255, 1);
+  font-size: 22.13px;
+  font-weight: 400;
+  line-height: 26.56px;
+}
+footer p {
+  font-size: 20.43px;
+  font-weight: 400;
+  line-height: 24.51px;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Lato", serif;
+}
+@media (max-width: 1440px) {
+  .about-section {
+    gap: 30px;
+  }
+  .btn-4{
+    top: 8px;
+  }
+}
+@media (max-width: 1024px) {
+  .about-title {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .offcanvas-body,
+  .offcanvas {
+    background: transparent !important;
+  }
+}
+@media (max-width: 600px){
+  .email-input{
+    display: block;
+    height: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .slider-inner h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .avatar {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .btn-1,
+  .btn-2 {
+    display: none;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .avatar img {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .avatar {
+    width: 100%;
+  }
+  .about-section,
+  .projects {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .about-title,
+  .project-title {
+    transform: rotate(0deg);
+    display: block;
+    text-align: center;
+    writing-mode: initial;
+    margin-top: 5px;
+  }
+  .project-line,
+  .about-line {
+    height: 0;
+  }
+  .name {
+    gap: 0;
+  }
+  .name h2 {
+    font-size: 30px;
+  }
+  .download-cv a{
+    width: 200px;
+    font-size: 10px;
+  }
+}
